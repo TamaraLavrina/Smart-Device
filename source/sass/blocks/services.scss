@@ -3,23 +3,22 @@
 }
 
 .services__wrapper {
-  padding: 93px 10px 47px;
-  max-width: 1170px;
+  padding: 87px 10px 112px;
+  max-width: calc(1170px + 20px);
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    padding-left: 26px;
-    padding-right: 29px;
+    padding: 50px 30px 22px 26px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 .services h2 {
-  margin:  0 0 47px;
+  margin:  0 0 52px;
   font-family: $robotoC;
   font-weight: 400;
   font-size: 36px;
@@ -29,6 +28,7 @@
   @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 48px;
   }
 
   @media (max-width: $mobile-width) {
@@ -96,13 +96,18 @@
 
 .services h3 {
   display: block;
-  width: 50%;
-  margin: 53px 0 0 44px;
+  width: 40%;
+  margin: 50px 0 0 44px;
   font-family: $robotoC;
   font-weight: normal;
   font-style: 20px;
   line-height: 30px;
   color: $color-default-white;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 43px;
+    width: 20%;
+  }
 }
 
 .services li {

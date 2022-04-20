@@ -867,12 +867,12 @@ button,
 
 .header__text p {
   display: block;
-  padding-left: 100px;
+  padding-left: 97px;
   font-size: 22px;
   line-height: 34.5px;
   position: relative;
   max-width: 780px;
-  margin: 31px 0 40px;
+  margin: 28px 0 43px;
 }
 
 .header__text p::before {
@@ -883,7 +883,7 @@ button,
   background-color: #ffffff;
   width: 66px;
   height: 2px;
-  top: 10px;
+  top: 16px;
   left: 5px;
 }
 
@@ -931,7 +931,7 @@ button,
   margin: 0 auto;
   width: 100%;
   max-width: calc(1412px + 20px);
-  padding: 0 10px 43px;
+  padding: 65px 10px 20px;
 }
 
 .footer__logo-socials {
@@ -1138,12 +1138,18 @@ button,
 }
 
 .form__container {
-  max-width: 1425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  max-width: calc(1170px + 45px);
   margin: 0 auto;
   background-image: url("../img/plain.png");
-  background-size: 35% 43%;
+  background-size: 511px 288px;
   background-repeat: no-repeat;
-  background-position: 13%;
+  background-position: 0 161px;
 }
 
 .form__questions {
@@ -1154,9 +1160,9 @@ button,
   background-color: #00B2FF;
   max-width: 574px;
   min-width: 570px;
-  margin-left: auto;
-  padding-top: 96px;
-  padding-bottom: 113px;
+  margin-right: 20px;
+  padding-top: 90px;
+  padding-bottom: 115px;
 }
 
 .form h2 {
@@ -1165,6 +1171,7 @@ button,
   font-size: 36px;
   line-height: 50.63px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .form p {
@@ -1186,7 +1193,7 @@ button,
 
 .form textarea,
 .form input {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
@@ -1223,6 +1230,7 @@ button,
   padding-bottom: 14px;
   padding-top: 14px;
   margin-right: 30px;
+  min-width: 270px;
 }
 
 .form__btn-submit:hover {
@@ -1236,11 +1244,16 @@ button,
   display: flex;
 }
 
+.form__checkbox {
+  padding: 10px 0 0 8px;
+}
+
 .form__checkbox label {
   display: block;
-  padding-left: 36px;
+  padding-left: 33px;
   position: relative;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .form__checkbox label::before {
@@ -1285,13 +1298,13 @@ button,
 }
 
 .services__wrapper {
-  padding: 93px 10px 47px;
-  max-width: 1170px;
+  padding: 87px 10px 112px;
+  max-width: calc(1170px + 20px);
   margin: 0 auto;
 }
 
 .services h2 {
-  margin: 0 0 47px;
+  margin: 0 0 52px;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: 400;
   font-size: 36px;
@@ -1356,8 +1369,8 @@ button,
 
 .services h3 {
   display: block;
-  width: 50%;
-  margin: 53px 0 0 44px;
+  width: 40%;
+  margin: 50px 0 0 44px;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: normal;
   font-style: 20px;
@@ -1377,12 +1390,14 @@ button,
   background-color: #ffffff;
   background-image: url("../img/intro.png");
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -31px;
 }
 
 .advantages {
   max-width: calc(1170px + 40px);
   margin: 0 auto;
-  padding: 109px 20px;
+  padding: 95px 20px 60px;
 }
 
 .advantages ul {
@@ -1399,8 +1414,9 @@ button,
   color: #00B2FF;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: normal;
-  font-style: 24px;
+  font-size: 24px;
   line-height: 33.75px;
+  margin: 15px 0;
 }
 
 .advantages li {
@@ -1409,7 +1425,8 @@ button,
   width: calc( 50% - 15px);
   margin-bottom: 30px;
   border: 1px solid #EBEBEB;
-  padding: 45px 43px 50px 45px;
+  padding: 40px 43px 55px;
+  min-height: 299px;
 }
 
 .advantages li::after {
@@ -1450,6 +1467,67 @@ button,
   color: #ffffff;
 }
 
+.about {
+  position: relative;
+  max-width: calc(1170px + 60px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 114px;
+  padding-right: 25px;
+}
+
+.about__date {
+  position: absolute;
+  width: 220px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.about__info {
+  margin-left: 210px;
+}
+
+.about h2 {
+  font-family: "RobotoCondensed", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50.63px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about p {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.5px;
+  margin-bottom: 25px;
+}
+
+.about a {
+  display: inline-block;
+  padding: 14px 13px 8px 12px;
+  text-transform: uppercase;
+  color: #00B2FF;
+  border: 1px solid #00B2FF;
+  font-family: "RobotoCondensed", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: .05em;
+  border-radius: 5px;
+  min-width: 180px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about a:hover {
+  color: #ffffff;
+  background-color: #00B2FF;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1476,7 +1554,7 @@ button,
   }
 
   .header__nav {
-    padding: 20px 15px 0;
+    padding: 20px 28px 0 22px;
   }
 
   .header__nav ul {
@@ -1496,7 +1574,7 @@ button,
   }
 
   .header__text {
-    padding: 116px 10% 163px 11%;
+    padding: 116px 10% 163px 11.5%;
     background-image: -webkit-image-set(url("../img/micro-tab@1x.webp") 1x, url("../img/micro-tab@2x.webp") 2x, url("../img/micro-tab@1x.png") 1x, url("../img/micro-tab@2x.png") 2x);
     background-image: image-set(url("../img/micro-tab@1x.webp") 1x, url("../img/micro-tab@2x.webp") 2x, url("../img/micro-tab@1x.png") 1x, url("../img/micro-tab@2x.png") 2x);
     background-size: 330px 466px;
@@ -1511,18 +1589,19 @@ button,
   .header__text p {
     max-width: 70%;
     font-size: 18px;
-    padding-left: 55px;
+    padding-left: 50px;
     line-height: 28.22px;
     margin-bottom: 55px;
+    margin-top: 31px;
   }
 
   .header__text p::before {
-    width: 35px;
+    width: 33px;
     top: 16px;
   }
 
   .header__text a {
-    margin-left: 55px;
+    margin-left: 51px;
     padding: 18px 30px;
     letter-spacing: 1.9px;
   }
@@ -1541,6 +1620,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .footer__logo-socials {
@@ -1557,13 +1639,30 @@ button,
 
   .footer__main-nav {
     width: 100%;
-    padding: 40px 25px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+    margin-bottom: 0px;
   }
 
   .footer__nav-list--columns {
     -webkit-columns: 1;
     -moz-columns: 1;
     columns: 1;
+  }
+
+  .footer__contacts {
+    padding-right: 12px;
+  }
+
+  .footer__policy a {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+  }
+
+  .footer__policy a:last-child {
+    padding-right: 15px;
   }
 
   .footer__policy p {
@@ -1584,12 +1683,14 @@ button,
     font-size: 13px;
     line-height: 24px;
     letter-spacing: .5px;
+    margin-top: 16px;
+    padding-left: 18px;
   }
 
   .footer__logo-socials::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -25px;
     width: 100%;
     left: -120px;
     left: 0;
@@ -1601,6 +1702,9 @@ button,
 
   .socials {
     margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .form {
@@ -1609,31 +1713,48 @@ button,
 
   .form__container {
     background-image: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .form__questions {
+    margin-top: 55px;
   }
 
   .form__text {
-    margin-right: auto;
+    padding-top: 78px;
+    margin-right: 0;
     max-width: 591px;
+    padding-bottom: 107px;
   }
 
   .form h2 {
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 17px;
+  }
+
+  .form input {
+    width: 280px;
+  }
+
+  .form textarea {
+    height: 160px;
+  }
+
+  .form__btn-submit {
+    min-width: 280px;
   }
 
   .services__wrapper {
-    padding-left: 26px;
-    padding-right: 29px;
-  }
-
-  .services__wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 50px 30px 22px 26px;
   }
 
   .services h2 {
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 48px;
   }
 
   .services ul {
@@ -1646,6 +1767,55 @@ button,
   .services li {
     width: 100%;
     margin-bottom: 46px;
+  }
+
+  .services h3 {
+    margin-top: 43px;
+    width: 20%;
+  }
+
+  .advantages {
+    padding: 38px 25px 7px;
+  }
+
+  .advantages h3 {
+    margin: 5px 0 10px;
+  }
+
+  .advantages li {
+    height: auto;
+    min-height: 306px;
+    padding: 23px 20px 10px 27px;
+  }
+
+  .advantages p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .advantages .advantages__short-card {
+    min-height: 232px;
+  }
+
+  .about {
+    padding-bottom: 83px;
+  }
+
+  .about__date {
+    width: 361px;
+  }
+
+  .about__date img {
+    width: 240px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about p {
+    margin-top: 22px;
+    padding-left: 4px;
   }
 }
 
@@ -1798,6 +1968,11 @@ button,
     line-height: 39.38px;
   }
 
+  .services__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .services h2 {
     font-size: 28px;
     line-height: 39.38px;
@@ -1805,9 +1980,18 @@ button,
 
   .advantages li {
     width: 100%;
+    min-height: none;
   }
 
   .advantages li:nth-child(odd) {
     margin-right: 0;
+  }
+
+  .about {
+    padding: 10px 14px 87px;
+  }
+
+  .about__date {
+    display: none;
   }
 }

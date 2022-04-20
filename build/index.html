@@ -78,7 +78,7 @@
                   обеспичивает хорошее качество нашей продукции.
                 </p>
               </li>
-              <li>
+              <li class="advantages__short-card">
                 <svg width="36" height="31">
                   <use xlink:href="./img/sprite/sprite.svg#hat"></use>
                 </svg>
@@ -86,21 +86,67 @@
                 <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
                 </p>
               </li>
-              <li>
+              <li class="advantages__short-card">
                 <svg width="35" height="35">
                   <use xlink:href="./img/sprite/sprite.svg#tag"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
-                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.      </p>
+                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
             </ul>
-
           </section>
-          <section class="about"></section>
+          <section class="about">
+            <div class="about__date">
+              <picture>
+                <!-- desktop:
+                  1x - 220px; 2x - 440px;
+                  tablet:
+                  1x - 244px; 2x - 487px;   -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/about-date.webp 1x,
+                  ./img/about-date@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                srcset="./img/about-date-tab.webp 1x,
+              ./img/about-date-tab@2x.webp 2x">
+
+                <!-- -->
+                <img srcset="
+                  ./img/about-date.png 220w,
+                  ./img/about-date@2x.png 440w,
+
+                  ./img/about-date-tab.png 244w,
+                  ./img/about-date-tab@2x.png 487w,
+
+
+                  " sizes="
+                (min-width: 1024px) 220px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 440px,
+                (max-width: 1023px) 244px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 487px
+
+                " src="./img/about-date.png" loading="lazy" alt="микросхемы и другие товары, производимые компание" width="220" height="317">
+              </picture>
+            </div>
+            <div class="about__info">
+              <h2>О компании</h2>
+              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии&nbsp;с 1997 года.
+                Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+              <p class="">
+                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+                Среди наших клиентов крупнейшие Производители светотехники России.
+              </p>
+
+              <!-- <p class="about__info">
+                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+                Среди наших клиентов крупнейшие Производители светотехники России.
+              </p> -->
+              <a href="#" class="about__link"> Подробнее</a>
+            </div>
+          </section>
         </section>
         <section class="services">
           <div class="services__wrapper">
-            <h2>Service Device предлагает следующие товары и услуги</h2>
+            <h2>Service Device предлагает следующие товары и&nbsp;услуги</h2>
           <ul>
             <li>
               <picture>
@@ -316,7 +362,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -343,7 +389,8 @@
           </button>
         </div>
       </div>
-    </div>
+    </div>  -->
+
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

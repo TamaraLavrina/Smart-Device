@@ -18,10 +18,13 @@
   margin: 0 auto;
   width: 100%;
   max-width: calc(1412px + 20px);
-  padding: 0 10px 43px;
+  padding: 65px 10px 20px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -52,7 +55,10 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding: 40px 25px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+    margin-bottom: 0px;
   }
 
   @media (max-width: $mobile-width) {
@@ -112,6 +118,10 @@
   margin-left: auto;
   padding-left: 20px;
 
+  @media (max-width: $tablet-width) {
+    padding-right: 12px;
+  }
+
   @media (max-width: $mobile-width) {
     position: relative;
     margin: 0;
@@ -165,6 +175,16 @@
   padding: 15px;
   padding-right: 0;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    &:last-child {
+      padding-right: 15px;
+    }
+  }
+
   @media (max-width: $mobile-width) {
     margin: 0;
   }
@@ -215,6 +235,8 @@
     font-size: 13px;
     line-height: 24px;
     letter-spacing: .5px;
+    margin-top: 16px;
+    padding-left: 18px;
   }
 
   @media (max-width: $mobile-width) {
@@ -226,7 +248,7 @@
   .footer__logo-socials::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -25px;
     width: 100%;
     left: -120px;
     left: 0;

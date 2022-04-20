@@ -1,7 +1,11 @@
 .advantages {
   max-width: calc(1170px + 40px);
   margin: 0 auto;
-  padding: 109px 20px;
+  padding: 95px 20px 60px;
+
+  @media (max-width: $tablet-width) {
+    padding: 38px 25px 7px;
+  }
 }
 
 .advantages ul {
@@ -15,8 +19,14 @@
   color: $color-sky-blue;
   font-family: $robotoC;
   font-weight: normal;
-  font-style: 24px;
+  font-size: 24px;
   line-height: 33.75px;
+  margin: 15px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 5px 0 10px;
+  }
+
 }
 
 .advantages li {
@@ -25,10 +35,18 @@
   width: calc( 50% - 15px);
   margin-bottom: 30px;
   border: 1px solid $color-ebebe;
-  padding: 45px 43px 50px 45px;
+  padding: 40px 43px 55px;
+  min-height: 299px;
+
+  @media (max-width: $tablet-width) {
+    height: auto;
+    min-height: 306px;
+    padding: 23px 20px 10px 27px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    min-height: none;
   }
 }
 
@@ -55,6 +73,11 @@
   font-weight: normal;
   line-height: 21.5px;
   font-size: 16px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .advantages svg {
@@ -70,4 +93,10 @@
 .advantages li:hover p,
 .advantages li:hover svg  {
   color: $color-default-white;
+}
+
+.advantages .advantages__short-card {
+  @media (max-width: $tablet-width) {
+    min-height: 232px;
+  }
 }
