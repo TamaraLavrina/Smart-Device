@@ -1,0 +1,73 @@
+.advantages {
+  max-width: calc(1170px + 40px);
+  margin: 0 auto;
+  padding: 109px 20px;
+}
+
+.advantages ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.advantages h3 {
+  color: $color-sky-blue;
+  font-family: $robotoC;
+  font-weight: normal;
+  font-style: 24px;
+  line-height: 33.75px;
+}
+
+.advantages li {
+  position: relative;
+  background-color: $color-default-white;
+  width: calc( 50% - 15px);
+  margin-bottom: 30px;
+  border: 1px solid $color-ebebe;
+  padding: 45px 43px 50px 45px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.advantages li::after {
+  position: absolute;
+  content: " ";
+  width: 3px;
+  height: 100%;
+  left: 0;
+  top:0;
+  background-color: $color-sky-blue;
+}
+
+.advantages li:nth-child(odd) {
+  margin-right: 30px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
+}
+
+.advantages p {
+  font-family: $ptMono;
+  font-weight: normal;
+  line-height: 21.5px;
+  font-size: 16px;
+}
+
+.advantages svg {
+  color: $color-sky-blue;
+}
+
+.advantages li:hover{
+  background-color:  $color-sky-blue;
+  transition: all 700ms ease-in;
+}
+
+.advantages li:hover  h3,
+.advantages li:hover p,
+.advantages li:hover svg  {
+  color: $color-default-white;
+}
