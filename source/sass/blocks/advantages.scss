@@ -6,6 +6,12 @@
   @media (max-width: $tablet-width) {
     padding: 38px 25px 7px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .advantages ul {
@@ -18,7 +24,7 @@
 .advantages h3 {
   color: $color-sky-blue;
   font-family: $robotoC;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 33.75px;
   margin: 15px 0;
@@ -27,6 +33,11 @@
     margin: 5px 0 10px;
   }
 
+  @media (max-width: $mobile-width) {
+    margin: 8px 0 16px;
+    font-size: 20px;
+    line-height: 28.13px;
+  }
 }
 
 .advantages li {
@@ -47,6 +58,9 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     min-height: none;
+    margin-bottom: 22px;
+    padding-right: 11px;
+    padding-left: 27px;
   }
 }
 
@@ -98,5 +112,11 @@
 .advantages .advantages__short-card {
   @media (max-width: $tablet-width) {
     min-height: 232px;
+  }
+
+  @media (max-width: $mobile-width) {
+    &:last-child{
+      min-height: 244px;
+    }
   }
 }

@@ -24,12 +24,25 @@
     background-image: none;
     justify-content: center;
   }
+
+  @media (max-width: $mobile-width) {
+    padding:  30px 10px 42px;
+  }
 }
 .form__questions {
   margin-top: 50px;
 
   @media (max-width: $tablet-width) {
     margin-top: 55px;
+   }
+
+   @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
    }
 }
 
@@ -47,6 +60,11 @@
     max-width: 591px;
     padding-bottom: 107px;
    }
+
+   @media (max-width: $mobile-width) {
+    padding:  0;
+    min-width: auto;
+  }
 }
 
 .form h2 {
@@ -66,6 +84,8 @@
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 39.38px;
+    padding-left: 10px;
+    margin-bottom: 12px;
   }
 }
 
@@ -75,11 +95,21 @@
   font-size: 16px;
   line-height: 21.5px;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+  padding-left: 10px;
+  }
 }
 
 .form-inputs-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    max-width: 100%;
+    width: 96%;
+  }
 }
 
 .form textarea,
@@ -94,10 +124,16 @@
 
 .form input {
   width: 272px;
-  padding: 12px 10px 16px 18px;
+  padding: 12px 10px 16px 20px;
 
   @media (max-width: $tablet-width) {
     width: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 15px;
   }
 }
 
@@ -109,6 +145,12 @@
 
   @media (max-width: $tablet-width) {
     height: 160px;
+  }
+
+  @media (max-width: $mobile-width) {
+   width: 96%;
+   height: 104px;
+   margin-bottom: 30px;
   }
 }
 
@@ -133,7 +175,12 @@ min-width: 270px;
 
 @media (max-width: $tablet-width) {
   min-width: 280px;
-}
+  }
+
+@media (max-width: $mobile-width) {
+  min-width: 290px;
+  margin: 0 auto 30px;
+  }
 }
 
 .form__btn-submit:hover {
@@ -143,10 +190,20 @@ min-width: 270px;
 
 .form__checkbox-wrap {
   display: flex;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 .form__checkbox {
   padding: 10px 0 0 8px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 3px;
+    padding-top: 2px;
+  }
 }
 
 .form__checkbox label {
@@ -155,6 +212,10 @@ min-width: 270px;
   position: relative;
   cursor: pointer;
   font-size: 14px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 35px;
+  }
 }
 
 .form__checkbox label::before {

@@ -53,3 +53,16 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.desktop-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tablet-text {
+  display: none;
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}

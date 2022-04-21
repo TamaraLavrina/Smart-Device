@@ -7,11 +7,11 @@
   padding-right: 25px;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 83px;
+    padding-bottom: 88px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 10px 14px 87px;
+    padding: 10px 14px 65px;
   }
 }
 
@@ -35,6 +35,10 @@
 
 .about__info {
   margin-left: 210px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .about h2 {
@@ -47,6 +51,11 @@
 
   @media (max-width: $tablet-width) {
     font-size: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39.38px;
   }
 }
 
@@ -61,8 +70,15 @@
     margin-top: 22px;
     padding-left: 4px;
   }
-}
 
+  @media (max-width: $mobile-width) {
+    margin-bottom: 45px;
+
+    &:last-of-type{
+      margin-bottom: 15px;
+    }
+  }
+}
 
 .about a {
   display: inline-block;
@@ -79,9 +95,14 @@
   min-width: 180px;
   text-align: center;
   margin-top: 15px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 14px;
+  }
 }
 
 .about a:hover {
   color: $color-default-white;
   background-color: $color-sky-blue;
 }
+

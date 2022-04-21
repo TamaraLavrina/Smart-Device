@@ -18,6 +18,8 @@ html {
   font-size: $fz-default;
   font-family: $ptMono;
   color: $color-dim-gray;
+  scroll-behavior: smooth;
+
 
 
   -webkit-font-smoothing: antialiased;

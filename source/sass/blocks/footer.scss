@@ -9,7 +9,7 @@
   width: 216px;
 
   @media (max-width: $mobile-width) {
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 }
 
@@ -25,6 +25,10 @@
     padding-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 45px 0 25px;
   }
 }
 
@@ -63,7 +67,8 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    padding: 20px 0 10px;
+    padding: 0;
+    margin-top: 54px;
   }
 }
 
@@ -89,6 +94,7 @@
 
   @media (max-width: $mobile-width) {
     cursor: pointer;
+    margin-bottom: 07px;
   }
 }
 
@@ -139,7 +145,6 @@
   margin-bottom: 5px;
 }
 
-
 .footer__bottom-footer{
   position: relative;
 }
@@ -158,15 +163,19 @@
 }
 
 .footer__policy {
-  display: flex;
-  margin: 0 auto;
   max-width: calc(1412px + 20px);
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
   padding: 0 10px;
   text-transform: uppercase;
-  align-items: center;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+
+    padding-bottom: 5px;
+    padding-top: 16px;
   }
 }
 
@@ -187,6 +196,11 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
+    padding: 10px 0 11px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -220,10 +234,20 @@
   @media (max-width: $tablet-width) {
     margin-left: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 25px;
+    padding-left: 0px;
+  }
 }
 
 .footer__policy-link--dev {
   margin-left: auto;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 12px;
+  }
+
 }
 
 .footer__duble {
@@ -241,6 +265,8 @@
 
   @media (max-width: $mobile-width) {
     text-align: center;
+    padding-left: 0;
+    margin-bottom: 31px;
   }
 }
 
@@ -259,6 +285,12 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .footer__logo-socials::after {
+    bottom: -55px;
+  }
+}
+
 .footer__title::after {
   display: none;
   @media (max-width: $mobile-width) {
@@ -274,6 +306,21 @@
   }
 }
 
+.footer__main-nav  dd {
+  @media (max-width: $mobile-width) {
+    margin-top: 33px;
+    padding-bottom: 2px;
+    padding-right: 25px;
+  }
+}
+
+.footer address {
+  @media (max-width: $mobile-width) {
+    line-height: 25px;
+    margin-bottom: 0;
+    }
+}
+
 .footer-acc-text .footer__title--active {
   display: flex;
 }
@@ -287,7 +334,14 @@
 
 .footer__main-nav div {
   padding-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 0;
+  }
 }
+
 
 .footer__main-nav div + div::after {
   content: "";
@@ -300,4 +354,8 @@
   height: 1px;
   background-color: $color-grey-lines;
   opacity: 0.2;
+
+  @media (max-width: $mobile-width) {
+    top: 0;
+  }
 }

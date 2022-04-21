@@ -24,3 +24,8 @@
   .socials li:last-child{
     margin-right: 0;
   }
+
+  .socials li:hover img{
+    opacity: 0.8;
+    scale: 1.1;
+  }
