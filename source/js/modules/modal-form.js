@@ -9,8 +9,12 @@ const submitHandler = modal.querySelector('[type="submit"]');
 
 
 const validateModalForm = () => {
-  iMask(modalInput, maskOptions);
-  checkAgreement(userCheckbox, submitHandler);
+  if (!modal) {
+    return;
+  } else {
+    iMask(modalInput, maskOptions);
+    checkAgreement(userCheckbox, submitHandler);
+  }
 };
 
 export {validateModalForm};
