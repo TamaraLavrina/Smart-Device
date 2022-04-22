@@ -113,10 +113,10 @@
   @media (max-width: $tablet-width) {
     min-height: 232px;
   }
+}
 
+.advantages .advantages__short-card:last-child{
   @media (max-width: $mobile-width) {
-    &:last-child{
-      min-height: 244px;
-    }
+    min-height: 244px;
   }
 }

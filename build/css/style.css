@@ -1915,7 +1915,7 @@ button,
   }
 
   .footer__upper-footer {
-    padding: 45px 0 25px;
+    padding: 45px 0 0;
   }
 
   .footer__logo-socials {
@@ -2001,7 +2001,7 @@ button,
 
   .footer__main-nav dd {
     margin-top: 33px;
-    padding-bottom: 2px;
+    padding-bottom: 25px;
     padding-right: 25px;
   }
 

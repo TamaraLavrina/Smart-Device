@@ -22,14 +22,16 @@
 
   @media (max-width: $tablet-width) {
     width: 361px;
-
-    & img {
-      width: 240px;
-    }
   }
 
   @media (max-width: $mobile-width) {
     display: none;
+  }
+}
+
+.about__date img {
+  @media (max-width: $tablet-width) {
+    width: 240px;
   }
 }
 
@@ -73,12 +75,15 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 45px;
-
-    &:last-of-type{
-      margin-bottom: 15px;
-    }
   }
 }
+
+.about p:last-of-type{
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
+}
+
 
 .about a {
   display: inline-block;
