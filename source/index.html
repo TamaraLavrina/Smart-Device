@@ -278,7 +278,7 @@
                     <label class="visually-hidden" for="text">Ваш вопрос</label>
                     <textarea id="text" placeholder="Ваш вопрос" name="text"></textarea>
                     <div class="form__checkbox-wrap">
-                      <button class="form__btn-submit" type="submit">Задать вопрос</button>
+                      <button class="form__btn-submit btn" type="submit">Задать вопрос</button>
                       <div class="form__checkbox">
                         <input class="visually-hidden" id="agree" type="checkbox" name="agree" required="">
                         <label for="agree">Я согласен на обработку персональных данных</label>
@@ -361,35 +361,37 @@
         </div>
       </footer>
 
-    <!-- Модалки
-    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+          <form class="modal__questions" method="post" action="https://echo.htmlacademy.ru">
+            <div class="modal__inputs-wrapper">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input id="modal-name" type="text" name="name" placeholder="Имя" required="">
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input id="modal-tel" type="tel" name="modal-tel" placeholder="Телефон" maxlength="17" required="">
+            </div>
+                <label class="visually-hidden" for="text">Ваш вопрос</label>
+                <textarea id="modal__text" placeholder="Ваш вопрос" name="text"></textarea>
+                <div class="modal__checkbox-wrap">
+                  <button class="modal__btn-submit btn" type="submit">Отправить</button>
+                  <div class="modal__checkbox">
+                    <input data-agree class="visually-hidden" id="agree" type="checkbox" name="agree" required="">
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                  </div>
+                </div>
+          </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            <svg width="17" height="17">
+              <use xlink:href="./img/sprite/sprite.svg#icon-close"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>  -->
-
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

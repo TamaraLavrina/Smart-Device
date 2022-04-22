@@ -57,30 +57,117 @@
   }
 
   &__content {
-    position: relative;
+    position: fixed;
+    top: 136px;
 
-    width: 600px;
-    padding: 40px;
+    width: 490px;
+    padding: 33px 40px 36px;
 
-    background-color: $color-default-white;
-
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
+    background-color: $color-sky-blue;
+    color: $color-default-white;
   }
 
-  &__close-btn {
+  .modal__content h2 {
+    font-family: $robotoC;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39.38px;
+    margin-top: 0;
+  }
+
+  .modal__content p {
+    font-family: $ptMono;
+    font-size: 16px;
+    line-height: 21.5px;
+    font-weight: 400;
+  }
+
+  .modal__content input,
+  .modal__content textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px 15px 15px 24px;
+    color: $color-default-white;
+    background-color: rgba(255,255,255,.1);
+    border: none;
+  }
+
+  .modal__content textarea {
+    height: 104px;
+  }
+
+  // .modal__checkbox {
+  //   padding-left: 49px;
+  // }
+
+  .modal__checkbox label {
+    display: block;
+    padding-left: 49px;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .modal__checkbox label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    left: 2px;
+  }
+
+  .modal__checkbox input:checked ~ label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/checked.svg);
+    background-repeat: no-repeat;
+    left: 6px;
+    top: 5px;
+  }
+
+  .modal__content input:hover,
+  .modal__content textarea:hover {
+    box-shadow: inset 2px 2px 5px rgba(154,147,140,.5),1px 1px 5px #fff;
+    opacity: 0.7;
+  }
+
+  .modal__content input:focus,
+  .modal__content textarea:focus {
+    box-shadow: inset 2px 2px 5px rgba(154,147,140,.5),1px 1px 5px #fff;
+    opacity: 1.0;
+  }
+
+  .modal__btn-submit {
+    display: block;
+    width: 100%;
+    color: $color-default-white;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid $color-default-white;
+    padding: 15px 25px 10px;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  .modal__close-btn {
     position: absolute;
     top: 22px;
     right: 22px;
-    z-index: 1;
+    z-index: 101;
 
     width: 40px;
     height: 40px;
     padding: 0;
 
     background: $color-transparent;
+    color: $color-default-white;
     border: none;
     cursor: pointer;
   }

@@ -718,21 +718,111 @@ button,
 }
 
 .modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
+  position: fixed;
+  top: 136px;
+  width: 490px;
+  padding: 33px 40px 36px;
+  background-color: #00B2FF;
+  color: #ffffff;
 }
 
-.modal__close-btn {
+.modal .modal__content h2 {
+  font-family: "RobotoCondensed", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39.38px;
+  margin-top: 0;
+}
+
+.modal .modal__content p {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.5px;
+  font-weight: 400;
+}
+
+.modal .modal__content input,
+.modal .modal__content textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px 15px 15px 24px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.modal .modal__content textarea {
+  height: 104px;
+}
+
+.modal .modal__checkbox label {
+  display: block;
+  padding-left: 49px;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal .modal__checkbox label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  left: 2px;
+}
+
+.modal .modal__checkbox input:checked ~ label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+  left: 6px;
+  top: 5px;
+}
+
+.modal .modal__content input:hover,
+.modal .modal__content textarea:hover {
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
+  opacity: 0.7;
+}
+
+.modal .modal__content input:focus,
+.modal .modal__content textarea:focus {
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
+  opacity: 1.0;
+}
+
+.modal .modal__btn-submit {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  padding: 15px 25px 10px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.modal .modal__close-btn {
   position: absolute;
   top: 22px;
   right: 22px;
-  z-index: 1;
+  z-index: 101;
   width: 40px;
   height: 40px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -1844,11 +1934,6 @@ button,
 
   .modal__wrapper {
     padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
   }
 
   .modal--fit-content .modal__content {

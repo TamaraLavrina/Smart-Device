@@ -1,6 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {accordeonInit} from './modules/accordeon';
+import {formValid} from './modules/form';
+import iMask from 'imask';
+import {validateModalForm} from './modules/modal-form.js';
+
+const inputElement = document.querySelector('[name="tel"]');
+const maskOptions = {mask: '+{7}(000)000-00-00'};
 
 // ---------------------------------
 
@@ -21,13 +27,15 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  // ---------------------------------
+  initModals();
+  validateModalForm();
+  breakpointChecker();
+  iMask(inputElement, maskOptions);
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
-    breakpointChecker();
+    formValid();
   });
 });
 
