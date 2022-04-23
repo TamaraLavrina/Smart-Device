@@ -10,7 +10,7 @@ const maskOptions = {mask: '+{7}(000)000-00-00'};
 
 // ---------------------------------
 
-const breakpoint = window.matchMedia(`(max-width:768px)`);
+const breakpoint = window.matchMedia('(max-width:768px)');
 const breakpointChecker = () => {
   if (!breakpoint.matches) {
     return;
@@ -33,4 +33,3 @@ window.addEventListener('DOMContentLoaded', () => {
     formValid();
   });
 });
-

@@ -59,10 +59,10 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -102,8 +102,8 @@
   margin-bottom: 25px;
 }
 
-.footer__main-nav  dd,
-.footer__main-nav  ul {
+.footer__main-nav dd,
+.footer__main-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -112,7 +112,7 @@
   line-height: 16px;
 }
 
-.footer__nav-list--columns{
+.footer__nav-list--columns {
   columns: 2;
 
   @media (max-width: $tablet-width) {
@@ -120,7 +120,7 @@
   }
 }
 
-.footer__contacts{
+.footer__contacts {
   margin-left: auto;
   padding-left: 20px;
 
@@ -140,16 +140,11 @@
   font-size: 15px;
 }
 
-.footer address {
-  font-style: normal;
-  margin-bottom: 5px;
-}
-
-.footer__bottom-footer{
+.footer__bottom-footer {
   position: relative;
 }
 
-.footer__bottom-footer::before{
+.footer__bottom-footer::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -196,7 +191,7 @@
   }
 }
 
-.footer__policy a:last-child  {
+.footer__policy a:last-child {
   @media (max-width: $tablet-width) {
     padding-right: 15px;
   }
@@ -219,7 +214,7 @@
 .footer__policy-link {
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .footer__policy-link--copyright {
@@ -239,7 +234,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 25px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -249,10 +244,9 @@
   @media (max-width: $mobile-width) {
     padding-top: 12px;
   }
-
 }
 
-.footer__duble {
+.footer__logo-socials p {
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -260,7 +254,7 @@
     text-transform: uppercase;
     font-size: 13px;
     line-height: 24px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     margin-top: 16px;
     padding-left: 18px;
   }
@@ -278,7 +272,6 @@
     position: absolute;
     bottom: -25px;
     width: 100%;
-    left: -120px;
     left: 0;
     display: block;
     height: 1px;
@@ -295,6 +288,7 @@
 
 .footer__title::after {
   display: none;
+
   @media (max-width: $mobile-width) {
     display: block;
     content: "\002B";
@@ -308,7 +302,7 @@
   }
 }
 
-.footer__main-nav  dd {
+.footer__main-nav dd {
   @media (max-width: $mobile-width) {
     margin-top: 33px;
     padding-bottom: 25px;
@@ -317,10 +311,13 @@
 }
 
 .footer address {
+  font-style: normal;
+  margin-bottom: 5px;
+
   @media (max-width: $mobile-width) {
     line-height: 25px;
     margin-bottom: 0;
-    }
+  }
 }
 
 .footer-acc-text .footer__title--active {
@@ -329,8 +326,8 @@
 
 .footer__title--active::after {
   @media (max-width: $mobile-width) {
-  background-color: $color-default-white;
-  content: "\2212";
+    background-color: $color-default-white;
+    content: "\2212";
   }
 }
 
@@ -350,7 +347,6 @@
   position: absolute;
   top: -10px;
   width: 100%;
-  left: -120px;
   left: 0;
   display: block;
   height: 1px;

@@ -384,90 +384,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "PTMono";
-  font-display: swap;
-  src: url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "RobotoCondensed";
-  font-display: swap;
-  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "RobotoCondensed";
-  font-display: swap;
-  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff");
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  width: 100%;
-}
-
-html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "PTMono", "Arial", sans-serif;
-  color: #666666;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-}
-
-a {
-  color: #666666;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00B2FF;
-  scale: 1.1;
-}
-
-img,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-textarea {
-  resize: none;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
-}
-
 input,
 textarea {
   border-radius: 0;
@@ -557,6 +473,30 @@ button,
   appearance: none;
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PTMono";
+  font-display: swap;
+  src: url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "RobotoCondensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "RobotoCondensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff");
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -622,8 +562,58 @@ button,
   transition: none !important;
 }
 
-.tablet-text {
-  display: none;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "PTMono", "Arial", sans-serif;
+  color: #666666;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b2ff;
+  scale: 1.1;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
 }
 
 .container {
@@ -722,7 +712,7 @@ button,
   top: 136px;
   width: 490px;
   padding: 33px 40px 36px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: #ffffff;
 }
 
@@ -770,7 +760,7 @@ button,
   width: 16px;
   height: 16px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   left: 2px;
 }
 
@@ -780,7 +770,7 @@ button,
   position: absolute;
   width: 8px;
   height: 5px;
-  background-image: url(../img/checked.svg);
+  background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   left: 6px;
   top: 5px;
@@ -788,16 +778,16 @@ button,
 
 .modal .modal__content input:hover,
 .modal .modal__content textarea:hover {
-  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
   opacity: 0.7;
 }
 
 .modal .modal__content input:focus,
 .modal .modal__content textarea:focus {
-  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #fff;
-  opacity: 1.0;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  opacity: 1;
 }
 
 .modal .modal__btn-submit {
@@ -857,7 +847,7 @@ button,
 }
 
 .header {
-  background-color: #1B2D37;
+  background-color: #1b2d37;
   background-image: -webkit-image-set(url("../img/header@1x.webp") 1x, url("../img/header/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header/header@2x.png") 2x);
   background-image: image-set(url("../img/header@1x.webp") 1x, url("../img/header/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header/header@2x.png") 2x);
   background-repeat: repeat;
@@ -973,7 +963,6 @@ button,
 .header__text p::before {
   position: absolute;
   display: block;
-  left: 0;
   content: " ";
   background-color: #ffffff;
   width: 66px;
@@ -983,9 +972,9 @@ button,
 }
 
 .header__text a {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: #ffffff;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   letter-spacing: 1.6px;
   padding: 18px 50px;
   margin-left: 100px;
@@ -1107,11 +1096,6 @@ button,
   font-size: 15px;
 }
 
-.footer address {
-  font-style: normal;
-  margin-bottom: 5px;
-}
-
 .footer__bottom-footer {
   position: relative;
 }
@@ -1157,7 +1141,7 @@ button,
 .footer__policy-link {
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .footer__policy-link--copyright {
@@ -1172,12 +1156,17 @@ button,
   margin-left: auto;
 }
 
-.footer__duble {
+.footer__logo-socials p {
   display: none;
 }
 
 .footer__title::after {
   display: none;
+}
+
+.footer address {
+  font-style: normal;
+  margin-bottom: 5px;
 }
 
 .footer-acc-text .footer__title--active {
@@ -1195,7 +1184,6 @@ button,
   position: absolute;
   top: -10px;
   width: 100%;
-  left: -120px;
   left: 0;
   display: block;
   height: 1px;
@@ -1230,7 +1218,7 @@ button,
 }
 
 .form {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: #ffffff;
   background-image: url("../img/triangles.png");
   background-position: 175px -60px;
@@ -1257,7 +1245,7 @@ button,
 }
 
 .form__text {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   max-width: 574px;
   min-width: 570px;
   margin-right: 20px;
@@ -1315,14 +1303,15 @@ button,
 
 .form__btn-submit {
   display: inline-block;
+  vertical-align: middle;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   background-color: transparent;
   width: 272px;
   color: inherit;
@@ -1335,7 +1324,7 @@ button,
 
 .form__btn-submit:hover {
   background-color: #ffffff;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .form__checkbox-wrap {
@@ -1363,7 +1352,7 @@ button,
   width: 16px;
   height: 16px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   left: 2px;
 }
 
@@ -1373,7 +1362,7 @@ button,
   position: absolute;
   width: 8px;
   height: 5px;
-  background-image: url(../img/checked.svg);
+  background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   left: 6px;
   top: 5px;
@@ -1394,7 +1383,7 @@ button,
 }
 
 .services {
-  background-color: #1B2D37;
+  background-color: #1b2d37;
 }
 
 .services__wrapper {
@@ -1422,6 +1411,7 @@ button,
 
 .services li {
   position: relative;
+  margin-right: 30px;
 }
 
 .services img {
@@ -1432,12 +1422,12 @@ button,
   position: absolute;
   width: 63px;
   height: 63px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: #ffffff;
   bottom: 0;
   right: 0;
   content: " ";
-  background-image: url(../img/arrow.svg);
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
@@ -1478,10 +1468,6 @@ button,
   color: #ffffff;
 }
 
-.services li {
-  margin-right: 30px;
-}
-
 .services li:last-child {
   margin-right: 0;
 }
@@ -1511,7 +1497,7 @@ button,
 }
 
 .advantages h3 {
-  color: #00B2FF;
+  color: #00b2ff;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: 400;
   font-size: 24px;
@@ -1522,9 +1508,9 @@ button,
 .advantages li {
   position: relative;
   background-color: #ffffff;
-  width: calc( 50% - 15px);
+  width: calc(50% - 15px);
   margin-bottom: 30px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   padding: 40px 43px 55px;
   min-height: 299px;
 }
@@ -1536,7 +1522,7 @@ button,
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantages li:nth-child(odd) {
@@ -1551,11 +1537,11 @@ button,
 }
 
 .advantages svg {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .advantages li:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   -webkit-transition: all 700ms ease-in;
   -o-transition: all 700ms ease-in;
   transition: all 700ms ease-in;
@@ -1608,15 +1594,16 @@ button,
 
 .about a {
   display: inline-block;
+  vertical-align: middle;
   padding: 14px 13px 8px 12px;
   text-transform: uppercase;
-  color: #00B2FF;
-  border: 1px solid #00B2FF;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
   font-family: "RobotoCondensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: .05em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   border-radius: 5px;
   min-width: 180px;
   text-align: center;
@@ -1625,15 +1612,8 @@ button,
 
 .about a:hover {
   color: #ffffff;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
-
-/* @media (hover: hover), screen and (min-width: 0\0) {
-  &:hover,
-  &:focus {
-    color: $color-default-white;
-  }
-} */
 
 @media (hover: hover), screen and (min-width: 0\0) {
   .btn:hover,
@@ -1649,14 +1629,6 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .desktop-text {
-    display: none;
-  }
-
-  .tablet-text {
-    display: block;
-  }
-
   .container {
     padding: 0 24px;
   }
@@ -1747,10 +1719,10 @@ button,
 
   .footer__main-nav {
     width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .footer__nav-list--columns {
@@ -1785,12 +1757,12 @@ button,
     margin-left: 0;
   }
 
-  .footer__duble {
+  .footer__logo-socials p {
     display: block;
     text-transform: uppercase;
     font-size: 13px;
     line-height: 24px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     margin-top: 16px;
     padding-left: 18px;
   }
@@ -1800,7 +1772,6 @@ button,
     position: absolute;
     bottom: -25px;
     width: 100%;
-    left: -120px;
     left: 0;
     display: block;
     height: 1px;
@@ -1917,6 +1888,10 @@ button,
     width: 240px;
   }
 
+  .about__info span {
+    display: none;
+  }
+
   .about h2 {
     font-size: 32px;
   }
@@ -1977,7 +1952,6 @@ button,
 
   .header__text p::before {
     width: 33px;
-    left: 0px;
     left: 2px;
   }
 
@@ -2055,14 +2029,14 @@ button,
 
   .footer__policy-link--nda {
     padding-top: 25px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .footer__policy-link--dev {
     padding-top: 12px;
   }
 
-  .footer__duble {
+  .footer__logo-socials p {
     text-align: center;
     padding-left: 0;
     margin-bottom: 31px;
@@ -2120,7 +2094,6 @@ button,
   }
 
   .form__questions {
-    margin-top: 25px;
     margin: 25px auto 0;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -43,6 +43,12 @@
   }
 }
 
+.about__info span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .about h2 {
   font-family: $robotoC;
   font-weight: 400;
@@ -78,7 +84,7 @@
   }
 }
 
-.about p:last-of-type{
+.about p:last-of-type {
   @media (max-width: $mobile-width) {
     margin-bottom: 15px;
   }
@@ -87,6 +93,7 @@
 
 .about a {
   display: inline-block;
+  vertical-align: middle;
   padding: 14px 13px 8px 12px;
   text-transform: uppercase;
   color: $color-sky-blue;
@@ -94,8 +101,8 @@
   font-family: $robotoC;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: .05em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   border-radius: 5px;
   min-width: 180px;
   text-align: center;
@@ -110,4 +117,3 @@
   color: $color-default-white;
   background-color: $color-sky-blue;
 }
-

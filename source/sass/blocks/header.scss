@@ -1,7 +1,9 @@
 .header {
   background-color: $color-tangaroa;
-  background-image: image-set(url("../img/header@1x.webp") 1x, url("../img/header/header@2x.webp") 2x,
-                              url("../img/header@1x.png") 1x, url("../img/header/header@2x.png") 2x,);
+  background-image: image-set(url("../img/header@1x.webp") 1x,
+                              url("../img/header/header@2x.webp") 2x,
+                              url("../img/header@1x.png") 1x,
+                              url("../img/header/header@2x.png") 2x,);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -27,7 +29,7 @@
   }
 }
 
-.header__nav img{
+.header__nav img {
   margin-left: 3px;
   flex-shrink: 0;
 
@@ -83,7 +85,7 @@
 
   @media (max-width: $tablet-width) {
     padding: 10px;
-}
+  }
 }
 
 .header__nav button {
@@ -102,8 +104,10 @@
   margin: 0 auto;
   color: $color-default-white;
   padding: 231px 9% 275px 13%;
-  background-image: image-set(url("../img/micro@1x.webp") 1x, url("../img/micro@2x.webp") 2x,
-                              url("../img/micro@1x.png") 1x, url("../img/micro@2x.png") 2x,);
+  background-image: image-set(url("../img/micro@1x.webp") 1x,
+                              url("../img/micro@2x.webp") 2x,
+                              url("../img/micro@1x.png") 1x,
+                              url("../img/micro@2x.png") 2x,);
   background-repeat: no-repeat;
   background-size: 713px 655px;
   background-position: calc(50% + 427px) 35px;
@@ -111,22 +115,26 @@
 
   @media (max-width: $tablet-width) {
     padding: 116px 10% 163px 11.5%;
-    background-image: image-set(url("../img/micro-tab@1x.webp") 1x, url("../img/micro-tab@2x.webp") 2x,
-    url("../img/micro-tab@1x.png") 1x, url("../img/micro-tab@2x.png") 2x,);
+    background-image: image-set(url("../img/micro-tab@1x.webp") 1x,
+                                url("../img/micro-tab@2x.webp") 2x,
+                                url("../img/micro-tab@1x.png") 1x,
+                                url("../img/micro-tab@2x.png") 2x,);
     background-size: 330px 466px;
     background-position: right -72px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 232px 5% 72px 5%;
-    background-image: image-set(url("../img/micro-mob@1x.webp") 1x, url("../img/micro-mob@2x.webp") 2x,
-    url("../img/micro-mob@1x.png") 1x, url("../img/micro-mob@2x.png") 2x,);
+    background-image: image-set(url("../img/micro-mob@1x.webp") 1x,
+                                url("../img/micro-mob@2x.webp") 2x,
+                                url("../img/micro-mob@1x.png") 1x,
+                                url("../img/micro-mob@2x.png") 2x,);
     background-size: 294px 368px;
     background-position: right 15px;
   }
 }
 
-.header__text h1{
+.header__text h1 {
   text-transform: uppercase;
   font-family: $robotoC;
   font-weight: 700;
@@ -176,7 +184,6 @@
 .header__text p::before {
   position: absolute;
   display: block;
-  left: 0;
   content: " ";
   background-color: $color-default-white;
   width: 66px;
@@ -191,12 +198,11 @@
 
   @media (max-width: $mobile-width) {
     width: 33px;
-    left: 0px;
     left: 2px;
   }
 }
 
-.header__text a{
+.header__text a {
   background-color: $color-sky-blue;
   color: $color-default-white;
   border: 1px solid $color-sky-blue;
@@ -221,13 +227,12 @@
   display: block;
   position: absolute;
   left: 0;
-  top: calc(50% - 9px );
+  top: calc(50% - 9px);
 
   @media (max-width: $tablet-width) {
     scale: 1.3;
     zoom: 1.3;
   }
-
 }
 
 @media (max-width: $tablet-width) {

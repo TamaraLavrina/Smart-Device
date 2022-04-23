@@ -1,31 +1,31 @@
 .socials {
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-top: 53px;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-top: 53px;
+  padding: 0;
+  list-style: none;
 
-    @media (max-width: $tablet-width) {
-      margin: 0;
-      align-items: center;
-    }
-
-    @media (max-width: $mobile-width) {
-      max-width: 112px;
-      margin: 0 auto;
-    }
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    align-items: center;
   }
 
-  .socials li{
-    margin-right: 16px;
+  @media (max-width: $mobile-width) {
+    max-width: 112px;
+    margin: 0 auto;
   }
+}
 
-  .socials li:last-child{
-    margin-right: 0;
-  }
+.socials li {
+  margin-right: 16px;
+}
 
-  .socials li:hover img{
-    opacity: 0.8;
-    scale: 1.1;
-  }
+.socials li:last-child {
+  margin-right: 0;
+}
+
+.socials li:hover img {
+  opacity: 0.8;
+  scale: 1.1;
+}

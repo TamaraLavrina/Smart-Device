@@ -4,12 +4,12 @@ import iMask from 'imask';
 const modal = document.querySelector('.modal');
 const modalInput = document.querySelector('[name="modal-tel"]');
 const maskOptions = {mask: '+{7}(000)000-00-00'};
-const userCheckbox = modal.querySelector('#agree');
+const userCheckbox = modal.querySelector('#modal-agree');
 const submitHandler = modal.querySelector('[type="submit"]');
 
 
 const validateModalForm = () => {
-  if (!modal) {
+  if (!modal || !modalInput) {
     return;
   } else {
     iMask(modalInput, maskOptions);

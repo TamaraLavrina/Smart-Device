@@ -11,8 +11,12 @@ const accordeonToggle = (evt) => {
 };
 
 const accordeonInit = () => {
-  content.forEach((item) => item.classList.add('visually-hidden'));
-  accordButtons.forEach((item) => item.addEventListener('click', (evt) => accordeonToggle(evt)));
+  if (!content) {
+    return;
+  } else {
+    content.forEach((item) => item.classList.add('visually-hidden'));
+    accordButtons.forEach((item) => item.addEventListener('click', (evt) => accordeonToggle(evt)));
+  }
 };
 
 export {accordeonInit};

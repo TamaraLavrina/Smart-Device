@@ -10,13 +10,13 @@ const userCheckbox = document.querySelector('#agree');
 const submitHandler = document.querySelector('[type="submit"]');
 
 const formValid = () => {
-  userCheckbox.addEventListener('click', () => {
-    checkAgreement(userCheckbox, submitHandler);
-  });
-
-  document.addEventListener('DOMContentLoaded', () => {
-
-  });
+  if (!userCheckbox || !submitHandler) {
+    return;
+  } else {
+    userCheckbox.addEventListener('click', () => {
+      checkAgreement(userCheckbox, submitHandler);
+    });
+  }
 };
 
 export {formValid, checkAgreement};

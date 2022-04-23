@@ -88,17 +88,13 @@
     margin-bottom: 30px;
     padding: 15px 15px 15px 24px;
     color: $color-default-white;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
   }
 
   .modal__content textarea {
     height: 104px;
   }
-
-  // .modal__checkbox {
-  //   padding-left: 49px;
-  // }
 
   .modal__checkbox label {
     display: block;
@@ -115,7 +111,7 @@
     width: 16px;
     height: 16px;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     left: 2px;
   }
 
@@ -125,7 +121,7 @@
     position: absolute;
     width: 8px;
     height: 5px;
-    background-image: url(../img/checked.svg);
+    background-image: url("../img/checked.svg");
     background-repeat: no-repeat;
     left: 6px;
     top: 5px;
@@ -133,14 +129,14 @@
 
   .modal__content input:hover,
   .modal__content textarea:hover {
-    box-shadow: inset 2px 2px 5px rgba(154,147,140,.5),1px 1px 5px #fff;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
     opacity: 0.7;
   }
 
   .modal__content input:focus,
   .modal__content textarea:focus {
-    box-shadow: inset 2px 2px 5px rgba(154,147,140,.5),1px 1px 5px #fff;
-    opacity: 1.0;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+    opacity: 1;
   }
 
   .modal__btn-submit {

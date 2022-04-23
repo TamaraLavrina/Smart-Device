@@ -43,7 +43,7 @@
 .advantages li {
   position: relative;
   background-color: $color-default-white;
-  width: calc( 50% - 15px);
+  width: calc(50% - 15px);
   margin-bottom: 30px;
   border: 1px solid $color-ebebe;
   padding: 40px 43px 55px;
@@ -70,7 +70,7 @@
   width: 3px;
   height: 100%;
   left: 0;
-  top:0;
+  top: 0;
   background-color: $color-sky-blue;
 }
 
@@ -98,14 +98,14 @@
   color: $color-sky-blue;
 }
 
-.advantages li:hover{
-  background-color:  $color-sky-blue;
+.advantages li:hover {
+  background-color: $color-sky-blue;
   transition: all 700ms ease-in;
 }
 
-.advantages li:hover  h3,
+.advantages li:hover h3,
 .advantages li:hover p,
-.advantages li:hover svg  {
+.advantages li:hover svg {
   color: $color-default-white;
 }
 
@@ -115,7 +115,7 @@
   }
 }
 
-.advantages .advantages__short-card:last-child{
+.advantages .advantages__short-card:last-child {
   @media (max-width: $mobile-width) {
     min-height: 244px;
   }
