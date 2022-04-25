@@ -25,11 +25,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   initModals();
-  validateModalForm();
+
   breakpointChecker();
   iMask(inputElement, maskOptions);
 
   window.addEventListener('load', () => {
     formValid();
+    validateModalForm();
   });
 });

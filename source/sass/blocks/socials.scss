@@ -1,8 +1,10 @@
 .socials {
   display: flex;
+  max-width: 130px;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: auto;
-  margin-top: 53px;
+  margin-top: 43px;
   padding: 0;
   list-style: none;
 
@@ -19,9 +21,10 @@
 
 .socials li {
   margin-right: 16px;
+  margin-top: 10px;
 }
 
-.socials li:last-child {
+.socials li:nth-child(3n) {
   margin-right: 0;
 }
 

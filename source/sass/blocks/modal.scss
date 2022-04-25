@@ -25,6 +25,12 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
+  @include vp-767 {
+    max-width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -39,10 +45,6 @@
     width: 100%;
     min-height: 100%;
     padding: 60px 40px;
-
-    @include vp-767 {
-      padding: 60px 16px;
-    }
   }
 
   &__overlay {
@@ -60,11 +62,17 @@
     position: fixed;
     top: 136px;
 
-    width: 490px;
+    max-width: 490px;
     padding: 33px 40px 36px;
 
     background-color: $color-sky-blue;
     color: $color-default-white;
+
+    @media (max-width: $tablet-width) {
+      max-width: 80%;
+      padding: 0;
+      margin: auto;
+    }
   }
 
   .modal__content h2 {
@@ -125,6 +133,10 @@
     background-repeat: no-repeat;
     left: 6px;
     top: 5px;
+  }
+
+  .modal__checkbox input:focus ~ label::before {
+    border: 1px solid $color-default-black;
   }
 
   .modal__content input:hover,

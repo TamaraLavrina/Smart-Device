@@ -1,9 +1,9 @@
 .header {
   background-color: $color-tangaroa;
   background-image: image-set(url("../img/header@1x.webp") 1x,
-                              url("../img/header/header@2x.webp") 2x,
+                              url("../img/header@2x.webp") 2x,
                               url("../img/header@1x.png") 1x,
-                              url("../img/header/header@2x.png") 2x,);
+                              url("../img/header@2x.png") 2x,);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -42,6 +42,8 @@
 .header__nav ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc(100% - 202px - 180px - 65px);
   padding: 0;
   margin: 0 45px 0 auto;
   list-style: none;
@@ -70,7 +72,7 @@
   }
 }
 
-.header__nav li:last-of-type {
+.header__nav li:nth-child(2n)  {
   margin-right: 0;
 }
 

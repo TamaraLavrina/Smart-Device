@@ -1,3 +1,6 @@
+// import {sendData} from './fetch';
+// import {showErrorCard, showSuccessCard} from './messages';
+
 const checkAgreement = (userCheckbox, button) => {
   if (userCheckbox.checked !== true) {
     button.disabled = true;
@@ -8,6 +11,20 @@ const checkAgreement = (userCheckbox, button) => {
 
 const userCheckbox = document.querySelector('#agree');
 const submitHandler = document.querySelector('[type="submit"]');
+// const form = document.querySelector('.form__questions');
+
+// const setUserFormSubmit = (onSuccess) => {
+//   form.addEventListener('submit', (evt) => {
+//     evt.preventDefault();
+//     sendData(
+//         () => {
+//           onSuccess();
+//           form.reset();
+//         },
+//         () => showErrorCard(),
+//         new FormData(evt.target));
+//   });
+// };
 
 const formValid = () => {
   if (!userCheckbox || !submitHandler) {
@@ -16,6 +33,7 @@ const formValid = () => {
     userCheckbox.addEventListener('click', () => {
       checkAgreement(userCheckbox, submitHandler);
     });
+    // setUserFormSubmit(showSuccessCard, showErrorCard);
   }
 };
 

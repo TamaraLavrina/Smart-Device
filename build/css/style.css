@@ -575,6 +575,8 @@ body {
   padding: 0;
   min-height: 100vh;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -593,6 +595,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
+  -ms-grid-rows: min-content 1fr min-content;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -710,7 +718,7 @@ textarea {
 .modal__content {
   position: fixed;
   top: 136px;
-  width: 490px;
+  max-width: 490px;
   padding: 33px 40px 36px;
   background-color: #00b2ff;
   color: #ffffff;
@@ -774,6 +782,10 @@ textarea {
   background-repeat: no-repeat;
   left: 6px;
   top: 5px;
+}
+
+.modal .modal__checkbox input:focus ~ label::before {
+  border: 1px solid #000000;
 }
 
 .modal .modal__content input:hover,
@@ -848,8 +860,8 @@ textarea {
 
 .header {
   background-color: #1b2d37;
-  background-image: -webkit-image-set(url("../img/header@1x.webp") 1x, url("../img/header/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header/header@2x.png") 2x);
-  background-image: image-set(url("../img/header@1x.webp") 1x, url("../img/header/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header/header@2x.png") 2x);
+  background-image: -webkit-image-set(url("../img/header@1x.webp") 1x, url("../img/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header@2x.png") 2x);
+  background-image: image-set(url("../img/header@1x.webp") 1x, url("../img/header@2x.webp") 2x, url("../img/header@1x.png") 1x, url("../img/header@2x.png") 2x);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -886,6 +898,10 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: calc(100% - 202px - 180px - 65px);
   padding: 0;
   margin: 0 45px 0 auto;
   list-style: none;
@@ -908,7 +924,7 @@ textarea {
   margin-right: 83px;
 }
 
-.header__nav li:last-of-type {
+.header__nav li:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -1195,20 +1211,24 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 130px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-right: auto;
-  margin-top: 53px;
+  margin-top: 43px;
   padding: 0;
   list-style: none;
 }
 
 .socials li {
   margin-right: 16px;
+  margin-top: 10px;
 }
 
-.socials li:last-child {
+.socials li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1235,7 +1255,7 @@ textarea {
   max-width: calc(1170px + 45px);
   margin: 0 auto;
   background-image: url("../img/plain.png");
-  background-size: 511px 288px;
+  background-size: 42% 288px;
   background-repeat: no-repeat;
   background-position: 0 161px;
 }
@@ -1287,6 +1307,9 @@ textarea {
   border: none;
   font-size: 16px;
   line-height: 21.5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form input {
@@ -1368,6 +1391,10 @@ textarea {
   top: 5px;
 }
 
+.form__checkbox input:focus ~ label::before {
+  border: 1px solid #000000;
+}
+
 .form input:hover,
 .form textarea:hover {
   -webkit-box-shadow: inset 3px 3px 6px rgba(154, 147, 140, 0.3), 1px 1px 5px rgba(255, 255, 255, 0.9);
@@ -1405,13 +1432,21 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .services li {
   position: relative;
   margin-right: 30px;
+  margin-bottom: 16px;
+  width: calc((100% - 30px - 30px)/3);
 }
 
 .services img {
@@ -1468,7 +1503,7 @@ textarea {
   color: #ffffff;
 }
 
-.services li:last-child {
+.services li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1631,6 +1666,12 @@ textarea {
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
+  }
+
+  .modal__content {
+    max-width: 80%;
+    padding: 0;
+    margin: auto;
   }
 
   .header__nav {
@@ -1841,6 +1882,7 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 16px;
   }
 
   .services li {
@@ -1907,8 +1949,10 @@ textarea {
     padding: 0 16px;
   }
 
-  .modal__wrapper {
-    padding: 60px 16px;
+  .modal {
+    max-width: 30%;
+    padding: 0;
+    margin: 0;
   }
 
   .modal--fit-content .modal__content {

@@ -16,7 +16,7 @@
   max-width: calc(1170px + 45px);
   margin: 0 auto;
   background-image: url("../img/plain.png");
-  background-size: 511px 288px;
+  background-size: 42% 288px;
   background-repeat: no-repeat;
   background-position: 0 161px;
 
@@ -119,6 +119,7 @@
   border: none;
   font-size: 16px;
   line-height: 21.5px;
+  appearance: none;
 }
 
 .form input {
@@ -239,6 +240,10 @@
   background-repeat: no-repeat;
   left: 6px;
   top: 5px;
+}
+
+.form__checkbox input:focus ~ label::before {
+  border: 1px solid $color-default-black;
 }
 
 .form input:hover,
