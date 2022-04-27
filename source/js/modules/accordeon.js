@@ -1,13 +1,25 @@
 const accordButtons = document.querySelectorAll('.footer__title');
 const content = document.querySelectorAll('.footer-acc-text');
-
+const headers = document.querySelectorAll('.footer__title');
 
 const accordeonToggle = (evt) => {
+  const currentTitle = evt.target.closest('dt');
+  const currentContent = currentTitle.nextElementSibling;
+
+
   evt.preventDefault();
-  const title = evt.target.closest('dt');
-  title.classList.toggle('footer__title--active');
-  const currentContent = title.nextElementSibling;
-  currentContent.classList.toggle('visually-hidden');
+
+  if (!currentTitle.classList.contains('footer__title--active')) {
+    headers.forEach((item) => {
+      item.classList.remove('footer__title--active');
+    });
+    content.forEach((item) => item.classList.add('visually-hidden'));
+    currentTitle.classList.add('footer__title--active');
+    currentContent.classList.remove('visually-hidden');
+  } else if (currentTitle.classList.contains('footer__title--active')) {
+    currentTitle.classList.remove('footer__title--active');
+    currentContent.classList.add('visually-hidden');
+  }
 };
 
 const accordeonInit = () => {

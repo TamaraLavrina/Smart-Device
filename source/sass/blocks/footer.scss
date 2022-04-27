@@ -98,6 +98,14 @@
   }
 }
 
+.footer__title a {
+  pointer-events: none;
+
+  @media (max-width: $mobile-width) {
+    pointer-events: auto;
+  }
+}
+
 .footer__title--spec {
   margin-bottom: 25px;
 }

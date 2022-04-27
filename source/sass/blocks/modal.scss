@@ -100,6 +100,11 @@
     border: none;
   }
 
+  .modal__content input::placeholder,
+  .modal__content textarea::placeholder {
+    color: $color-default-white;
+  }
+
   .modal__content textarea {
     height: 104px;
   }

@@ -50,6 +50,7 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
+    max-width: unset;
   }
 }
 

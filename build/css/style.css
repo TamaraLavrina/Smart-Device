@@ -749,6 +749,31 @@ textarea {
   border: none;
 }
 
+.modal .modal__content input::-webkit-input-placeholder,
+.modal .modal__content textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.modal .modal__content input::-moz-placeholder,
+.modal .modal__content textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.modal .modal__content input:-ms-input-placeholder,
+.modal .modal__content textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.modal .modal__content input::-ms-input-placeholder,
+.modal .modal__content textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.modal .modal__content input::placeholder,
+.modal .modal__content textarea::placeholder {
+  color: #ffffff;
+}
+
 .modal .modal__content textarea {
   height: 104px;
 }
@@ -1082,6 +1107,10 @@ textarea {
   margin-bottom: 30px;
 }
 
+.footer__title a {
+  pointer-events: none;
+}
+
 .footer__title--spec {
   margin-bottom: 25px;
 }
@@ -1310,6 +1339,31 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #ffffff;
 }
 
 .form input {
@@ -1680,6 +1734,7 @@ textarea {
 
   .header__nav ul {
     margin-right: 0;
+    max-width: unset;
   }
 
   .header__nav li {
@@ -2045,6 +2100,10 @@ textarea {
   .footer__title {
     cursor: pointer;
     margin-bottom: 07px;
+  }
+
+  .footer__title a {
+    pointer-events: auto;
   }
 
   .footer__contacts {

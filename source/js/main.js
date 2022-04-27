@@ -33,4 +33,10 @@ window.addEventListener('DOMContentLoaded', () => {
     formValid();
     validateModalForm();
   });
+
+  window.onresize = () => {
+    breakpointChecker();
+  };
 });
+
+

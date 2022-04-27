@@ -122,6 +122,11 @@
   appearance: none;
 }
 
+.form input::placeholder,
+.form textarea::placeholder {
+  color: $color-default-white;
+}
+
 .form input {
   width: 272px;
   padding: 12px 10px 16px 20px;
