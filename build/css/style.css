@@ -2244,6 +2244,10 @@ textarea {
     padding-top: 15px;
   }
 
+  .form input:last-of-type {
+    width: auto;
+  }
+
   .form textarea {
     width: 96%;
     height: 104px;
