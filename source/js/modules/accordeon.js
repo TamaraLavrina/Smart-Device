@@ -6,7 +6,6 @@ const accordeonToggle = (evt) => {
   const currentTitle = evt.target.closest('dt');
   const currentContent = currentTitle.nextElementSibling;
 
-
   evt.preventDefault();
 
   if (!currentTitle.classList.contains('footer__title--active')) {
