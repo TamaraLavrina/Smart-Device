@@ -91,6 +91,8 @@ body {
   background-color: $color-default-white;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {

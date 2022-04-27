@@ -15,6 +15,7 @@ const checkAgreement = () => {
   if (modal) {
     if (userCheckbox.checked === true) {
       modalSubmitHandler.removeAttribute('disabled');
+      modalSubmitHandler.focus();
     } else {
       modalSubmitHandler.setAttribute('disabled', 'disabled');
     }

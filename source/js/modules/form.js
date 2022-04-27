@@ -6,6 +6,7 @@ const checkAgreement = (userCheckbox, button) => {
     button.disabled = true;
   } else {
     button.disabled = false;
+    button.focus();
   }
 };
 

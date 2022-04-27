@@ -601,6 +601,8 @@ body {
   -ms-grid-rows: min-content 1fr min-content;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -1505,6 +1507,7 @@ textarea {
 
 .services img {
   width: 100%;
+  height: auto;
 }
 
 .services li::after {
@@ -2284,6 +2287,8 @@ textarea {
 
   .services li {
     margin-bottom: 30px;
+    height: 256px;
+    overflow: hidden;
   }
 
   .services h3 {
