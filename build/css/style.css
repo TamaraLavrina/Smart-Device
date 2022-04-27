@@ -1885,6 +1885,11 @@ textarea {
     align-items: center;
   }
 
+  .socials li {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
   .form {
     background-image: none;
   }
@@ -2145,7 +2150,7 @@ textarea {
   .footer__logo-socials p {
     text-align: center;
     padding-left: 0;
-    margin-bottom: 31px;
+    margin-bottom: 20px;
   }
 
   .footer__logo-socials::after {
@@ -2193,6 +2198,11 @@ textarea {
   .socials {
     max-width: 112px;
     margin: 0 auto;
+  }
+
+  .socials li {
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .form__container {

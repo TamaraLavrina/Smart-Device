@@ -22,6 +22,16 @@
 .socials li {
   margin-right: 16px;
   margin-top: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .socials li:nth-child(3n) {
